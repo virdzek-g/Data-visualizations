@@ -10,4 +10,4 @@ For visualization of unique variants detected by different sequencing techniques
 For visualization of VAF and ctDNA in multiple genes across cohort of patients
 
 
-<img width="1645" height="2204" alt="VAF_mutations_ctDNA" src="https://github.com/user-attachments/assets/32826bae-cc4c-496c-b191-de306d0f06bc" />
+<img width="362" height="464" alt="VAF_mutations_ctDNA" src="https://github.com/user-attachments/assets/70a1f855-0f31-4ace-b853-e7e1ec753389" />

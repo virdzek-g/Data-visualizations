@@ -3,4 +3,4 @@
 ## Three_sample_types_comparision
 For visualization of unique variants detected by different sequencing techniques in patients' samples 
 
-<img width="482" height="344" alt="three_factor_figure" src="https://github.com/user-attachments/assets/b2766eda-c71c-4018-9dca-82e928b6496a" />
+<img width="469" height="417" alt="three_factor_figure" src="https://github.com/user-attachments/assets/98a68f83-a34a-4d28-9590-c4ab2b5c530c" />

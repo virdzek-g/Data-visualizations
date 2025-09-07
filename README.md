@@ -26,6 +26,6 @@ Modified GATK PlotCopyRatiosWithModeledSegments script. This modification colors
 
 
 ## Binomial_proportion_confidence_interval
-Calculating a confidence interval for a binomial proportion
+Calculating a confidence interval for a binomial proportion. Here used for plotting of frequency of patients with mutated genes in a cohort.
 
 <img width="529" height="382" alt="binomial" src="https://github.com/user-attachments/assets/c0719b9e-b12d-4b80-aa39-e0d664058ba6" />

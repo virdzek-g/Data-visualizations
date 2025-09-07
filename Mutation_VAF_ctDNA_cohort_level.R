@@ -6,7 +6,7 @@ set_order_of_time_points <- function(time_col) {
 
 
 
-# Add color columns to the data table based on conditions
+# add color columns to the data table based on conditions
 add_color_columns <- function(data) {
   data$fill_color <- ifelse(grepl("multi", data$Genes), "#D4AC0D",
                             ifelse(grepl("cfDNA", data$Genes), "transparent",
@@ -34,10 +34,10 @@ plot_gene_vaf_long <- function(table, gene_col, time_col, vaf_col, dot_size, lab
     scale_color_identity() +
     scale_fill_identity() +
     theme_minimal() +
-    theme(axis.text.x = element_text(angle = 0, hjust = 0.5),  # Adjust hjust to move the labels to the right
+    theme(axis.text.x = element_text(angle = 0, hjust = 0.5),  #move the labels to the right
           legend.position = "bottom",
           axis.title = element_blank(),
-          axis.text = element_text(size = label_size, color = "black"),  # Adjust label color as needed
+          axis.text = element_text(size = label_size, color = "black"),  #
           strip.text = element_text(size = label_size),
           legend.key = element_rect(fill = "white"),
           legend.background = element_rect(fill = "white"))

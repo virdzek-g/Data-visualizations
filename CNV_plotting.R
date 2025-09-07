@@ -1,6 +1,6 @@
 source("CNVPlottingLibrary.R")
 
-sample_name <- "PZJ-BL"
+sample_name <- ""
 denoised_copy_ratios_file <- ".denoisedCR.tsv"
 allelic_counts_file <- ".hets.tsv"
 modeled_segments_file <- ".modelFinal.seg"

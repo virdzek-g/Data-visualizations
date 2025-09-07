@@ -21,6 +21,7 @@ tumor_mapping = {'yes':'#F9E79F','no':'#E5E7E9'}
 bar_mapping = {'BL': '#1891C2', 'RL': '#E56E25'}
 bar_kwargs = {'width': 0.8, 'edgecolor': 'black'}
 
+# BL and RL as preffix in table allows for them to be consistently plotted as upper or bottom triangles
 mapping = {'BL-empty':'white','RL-empty':'white','BL-MM':'#1891C2','RL-MM':'#E56E25','RL-MM_multiple':'#B41F1F','BL-MM_multiple':'#015F95'}
 value_order=['BL-empty','BL-MM','BL-MM_multiple']
 comut.add_categorical_data(data,  mapping=mapping,value_order=value_order,name = 'Mutation type', tick_style = 'oblique')
@@ -37,8 +38,8 @@ comut.plot_comut(figsize = (8.5, 8), x_padding = 0.04, y_padding = 0.04, tri_pad
 comut.add_unified_legend()
 
 
-from matplotlib.ticker import AutoMinorLocator # this function sets the location of the minor tick mark
-minor_locator = AutoMinorLocator(2) # will place minor ticks in between major ticks
+from matplotlib.ticker import AutoMinorLocator # location of the minor tick mark
+minor_locator = AutoMinorLocator(2) #  place minor ticks in between major ticks
 
 # set the axis minor tick locations to these positions
 comut.axes['Mutation type'].yaxis.set_minor_locator(minor_locator)

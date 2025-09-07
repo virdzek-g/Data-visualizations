@@ -23,3 +23,9 @@ For cohort level analysis of SNVs and CNVs. Enables visualization of two sequenc
 Modified GATK PlotCopyRatiosWithModeledSegments script. This modification colors segemnts by amplifications and deletions
 
 <img width="505" height="386" alt="CNV_plot" src="https://github.com/user-attachments/assets/612f5ef8-24c0-42d9-9440-329630e3b51a" />
+
+
+## Binomial_proportion_confidence_interval
+Calculating a confidence interval for a binomial proportion
+
+<img width="529" height="382" alt="binomial" src="https://github.com/user-attachments/assets/c0719b9e-b12d-4b80-aa39-e0d664058ba6" />

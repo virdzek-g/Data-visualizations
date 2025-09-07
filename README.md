@@ -29,3 +29,9 @@ Modified GATK PlotCopyRatiosWithModeledSegments script. This modification colors
 Calculating a confidence interval for a binomial proportion. Here used for plotting of frequency of patients with mutated genes in a cohort.
 
 <img width="529" height="382" alt="binomial" src="https://github.com/user-attachments/assets/c0719b9e-b12d-4b80-aa39-e0d664058ba6" />
+
+
+## Seurat_DotPlot
+Nicer looking version of Seurat DotPlot
+
+<img width="568" height="1101" alt="DotPlot" src="https://github.com/user-attachments/assets/8a2360cf-27a9-4855-932f-a13e2b1490cb" />

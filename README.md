@@ -17,3 +17,9 @@ For visualization of VAF and ctDNA in multiple genes across cohort of patients
 For cohort level analysis of SNVs and CNVs. Enables visualization of two sequencing methods per gene-sample pair by spliting the field into two parts
 
 <img width="448" height="479" alt="comutPlot" src="https://github.com/user-attachments/assets/b4dbecf8-b781-46c5-8e47-71b19739b61c" />
+
+
+## CNV_plotting_modified
+Modified GATK PlotCopyRatiosWithModeledSegments script. This modification colors segemnts by amplifications and deletions
+
+<img width="505" height="386" alt="CNV_plot" src="https://github.com/user-attachments/assets/612f5ef8-24c0-42d9-9440-329630e3b51a" />

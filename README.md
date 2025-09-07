@@ -34,5 +34,4 @@ Calculating a confidence interval for a binomial proportion. Here used for plott
 ## Seurat_DotPlot
 Nicer looking version of Seurat DotPlot
 
-<img width="354" height="545" alt="DotPlot" src="https://github.com/user-attachments/assets/024016a1-19c1-4c19-ab73-2c5fdf723427" />
-
+<img width="557" height="547" alt="dotplot_2" src="https://github.com/user-attachments/assets/1bc11834-0fa6-4ab9-8827-a9c3efe6ad49" />

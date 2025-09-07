@@ -45,6 +45,9 @@ plot_gene_vaf_long <- function(table, gene_col, time_col, vaf_col, dot_size, lab
   print(p)
 }
 
+### data table should contain 3 columns Genes, Sample or Time.point and VAF
+# Sample and Time point are used interchangeably, depending on what needs to be on x axis
+
 data <- read.delim()
 data1 <- add_color_columns(data)
 data1$Genes <- sub('.*-','',data1$Genes)

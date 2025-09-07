@@ -1,27 +1,12 @@
-# Function to specify the order of time points
+# Specify sample order
 set_order_of_time_points <- function(time_col) {
-  # Define the order of time points
   sample_order <- c('Sample1')
   return(factor(time_col, levels = sample_order))
 }
 
-# Function to add color columns to the data table based on conditions
-add_color_columns <- function(data) {
-  data$fill_color <- ifelse(grepl("cfDNA", data$Genes), "transparent",
-                            ifelse(data$Time.point == "T", "gray", "#2980B9"))
-  data$border_color <- ifelse(grepl("cfDNA", data$Genes), "black",
-                              ifelse(data$Time.point == "T", "gray", "transparent"))
-  return(data)
-}
-
-add_color_columns <- function(data) {
-  data$fill_color <- ifelse(data$VAF == 0, "transparent", "#2980B9")
-  data$border_color <- ifelse(data$VAF == 0, "transparent", "#2980B9")
-  return(data)
-}
 
 
-# Function to add color columns to the data table based on conditions
+# Add color columns to the data table based on conditions
 add_color_columns <- function(data) {
   data$fill_color <- ifelse(grepl("multi", data$Genes), "#D4AC0D",
                             ifelse(grepl("cfDNA", data$Genes), "transparent",
@@ -33,12 +18,11 @@ add_color_columns <- function(data) {
 }
 
 plot_gene_vaf_long <- function(table, gene_col, time_col, vaf_col, dot_size, label_size, line_color = "black") {
-  # Convert 'Genes' to factor with levels in the order of appearance in the data
+  # Convert 'Genes' to factor 
   table[[gene_col]] <- factor(table[[gene_col]], levels = unique(table[[gene_col]]))
-  # Reorder the data based on the order of time points
+  # Reorder the data based on the order of samples
   table[[time_col]] <- set_order_of_time_points(table[[time_col]])
 
-  # Create the plot using ggplot2
   p <- ggplot(table, aes(x = table[[time_col]], y = factor(table[[gene_col]], levels = unique(table[[gene_col]])))) +
     geom_segment(aes(xend = table[[time_col]], yend = factor(table[[gene_col]], levels = unique(table[[gene_col]])), color = line_color), size = 1) +
     geom_point(aes(size = table[[vaf_col]], color = border_color, fill = fill_color), 
@@ -66,13 +50,13 @@ data1 <- add_color_columns(data)
 data1$Genes <- sub('.*-','',data1$Genes)
 
 
-# Define the parameters
+# parameters
 gene_col <- "Genes"
 time_col <- "Time.point"
 vaf_col <- "VAF"
-dot_size <- 0.7                          # Relative size of dots
-label_size <- 10                        # Size of row and time point names
-line_color <- "black"                   # Color of the horizontal lines and dot outline
+dot_size <- 0.7                    
+label_size <- 10                       
+line_color <- "black"                   
 
-# Create the plot
+
 plot_gene_vaf_long(data1, gene_col, time_col, vaf_col, dot_size, label_size, line_color)

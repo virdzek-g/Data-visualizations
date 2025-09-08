@@ -20,7 +20,7 @@ For cohort level analysis of SNVs and CNVs. Enables visualization of two sequenc
 
 
 ## CNV_plotting_modified
-Modified GATK PlotCopyRatiosWithModeledSegments script. This modification colors segemnts by amplifications and deletions
+Modified GATK PlotCopyRatiosWithModeledSegments script. This modification colors segemnts by gains and losses
 
 <img width="505" height="386" alt="CNV_plot" src="https://github.com/user-attachments/assets/612f5ef8-24c0-42d9-9440-329630e3b51a" />
 

@@ -38,7 +38,7 @@ Nicer looking version of Seurat DotPlot
 
 ## Fragment_size
 
-calculates and plots frequency of fragment sizes for read pairs given a BAM file 
+calculates and plots frequency of fragment sizes for read pairs in a BAM file 
 
 <img width="486" height="356" alt="Fragment_size" src="https://github.com/user-attachments/assets/3e0402d9-9eae-483b-b516-a7e9e6d1203c" />
 

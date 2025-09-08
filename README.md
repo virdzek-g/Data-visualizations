@@ -35,3 +35,10 @@ Calculating a confidence interval for a binomial proportion. Here used for plott
 Nicer looking version of Seurat DotPlot
 
 <img width="557" height="547" alt="dotplot_2" src="https://github.com/user-attachments/assets/1bc11834-0fa6-4ab9-8827-a9c3efe6ad49" />
+
+## Fragment_size
+
+calculates and plots frequency of fragment sizes for read pairs given a BAM file 
+
+<img width="486" height="356" alt="Fragment_size" src="https://github.com/user-attachments/assets/3e0402d9-9eae-483b-b516-a7e9e6d1203c" />
+
